@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="alvaros"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hah</title>
+    <style>
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYX8LZbHibz5rPMAZTBwYT5tdYBzc7xBNSAQ&s");
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1.main-content{
+           height: 800px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 8rem;
+           font-weight: bold;
+           color: transparent;
+           background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+           background-size: 200%;
+           background-position: 0 50%;
+           background-clip: text;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           animation: animate-background 5s infinite alternate linear;
+        }
+
+        @keyframes animate-background {
+           0% {
+        background-position: 0 50%;
+        }
+        100% {
+        background-position: 100% 50%;
+        }
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            opacity: .9;
+        }
+        nav{
+           height: 30px;
+           box-shadow: 0px, 7px, 10px rgba(0, 0, 0, .1);
+        }
+        nav ul{
+            margin: 1px;
+            padding: 4px;
+            background-color: #4f0381;
+            opacity: 1;
+            list-style-type:none ;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        nav ul li{
+            margin: 10px;
+            padding: 3px;   
+        }
+        nav ul li a{
+            font-weight:bold;
+            text-decoration: none;
+            color: rgb(14, 10, 10);
+            border-radius: 3px;
+            transition: 0.5s, ease;
+        }
+        nav ul li a:hover{
+            background-color: #c0cca9;
+        }
+        .content{
+            max-width: 100%;
+            margin: 10px;
+            padding: 1px;
+            height: 1400px;
+            background-color: rgb(239, 231, 243);
+        }
+        .background{
+            text-align: center;
+        }
+        .bacground-clip{
+            max-width: 640px;
+            margin: 0 auto 6rem auto;
+            border-bottom: 0.2rem solid var(--main-white);
+        }
+        .background h1{
+            color: #333;
+        }
+        .background p{
+            color: #666;
+        }
+        .background,.card{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+        .card{
+            background-color: rgb(187, 183, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid, #00a6a6;
+            flex-direction: column;
+            width: 180px;
+            height:420px;
+            border-radius: 10px;
+            transition: 0.1 ease;
+            box-shadow: 1px solid, #024874;
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        .cover{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          
+        }
+        .cover img{
+            width: 170px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .contentbook{ 
+           text-align: center;
+        }
+        .contentbook h3{
+            color: #000000;
+        }
+        .contentbook p{
+            color: #666;
+        }
+        .div-button{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .button1,.button2{
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            background: #229cc5;
+            color: rgb(201, 197, 197);
+            border: rgb(0, 45, 97) 3px solid;
+            border-radius: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+
+        .button1:hover,.button2:hover{
+            opacity:0.9;
+            transform: scale(1.1);
+            color: #229cc5 ;
+        }
+        .cardpart2{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+         .cardpart2{
+            background-color: rgb(187, 183, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid, #00a6a6;
+            flex-direction: column;
+            width: 180px;
+            height:420px;
+            border-radius: 10px;
+            transition: 0.1 ease;
+            box-shadow: 1px solid, #024874;
+        }
+        .cardpart2:hover{
+            transform: scale(1.1);
+        }
+        .coverpart2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+        }
+        .coverpart2 img{
+            width: 170px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .contentbookpart2{ 
+           text-align: center;
+        }
+        .contentbookpart2 h3{
+            color: #000000;
+        }
+        .contentbookpart2 p{
+            color: #666;
+        }
+        .buttonpart22{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .buttonpart2,
+        .buttonpart1{
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            background: #229cc5;
+            color: white;
+            border: rgb(0, 45, 97) 3px solid;
+            border-radius: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+        .buttonpart1:hover,.buttonpart2:hover{
+            opacity:0.9;
+            transform: scale(1.1);
+            color: #229cc5 ;
+        }
+        a:link{
+        text-decoration: none;
+        color: white;
+        }
+        a:active{
+        text-decoration: none;
+        }
+        a:visited{
+        text-decoration: none;
+        color: white;
+        }
+        a:hover{
+        text-decoration: none;
+        }
+        h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+        button{
+            align-items: center; 
+        }
+        .uli{
+            display: flex;
+            justify-content: center;
+        }
+        @media (max-width: 28.75em) {
+  .welcome-section-header {
+    font-size: 4rem;
+  }
+}
+    </style>
+</head>
+<body>   
+     <header>
+        <nav >
+    <ul>
+
+        <li><a href="#welcome-section">beranda</a>
+        </li>
+        <li><a href="#collection-section">koleksi</a>
+        </li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S-385765438%3A1772927650095673&ifkv=ASfE1-qiFnkEE3xUYuMf9WvP9vfNdZ9lzaqiTHkdRA88XwwrYR9gs5NR1P-mGGl8AD8eqAFg-NL-&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin">peminjaman</a>
+        </li>
+        <li><a href="file:///D:/coding/part%20of%20alva.html">tentang kami</a>
+        </li>
+        <li><a href="file:///D:/coding/perpus.html">kuiz</a>
+        </li>
+    </ul>
+        </nav>
+        </header>
+    <section id="welcome-section" class="welcome-section">
+            <h1 class="main-content">ALVAROS LIBRARY</h1> 
+    </section>
+    <section id="collection-section" class="collection-section">
+<div class="content">
+    <div class="background">
+        <div class="background-clip">
+        <h2>SELAMAT DATANG DI PERPUSTAKAAN <span>ALVAROS</span></h2>
+        <p>KAMI MENYEDIAKAN BUKU YANG TERBAIK</p>
+        </div>
+    </div>
+<div class="uli">
+    <div class="card">
+        <div class="cardbackground">
+            <div class="cover">
+               <img src="https://th.bing.com/th/id/OIP.50K8XKnGc5DrkWSA8XflUAHaKn?rs=1&pid=ImgDetMain"  alt="book title">  
+            </div>
+            <div class="contentbook">
+                <h3 >Jagat Lelembut</h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2018</p>
+            </div>
+            <div class="div-button">
+                <button class="button1"><a href="https://archive.org/details/kisah-tanah-jawa-investigasi-mitos-dan-mistis/Kisah%20Tanah%20Jawa%20Jagat%20Lelembut/" id="ahrev">Read</a></button>
+                <button class="button2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="https://th.bing.com/th/id/OIP.S_R3_CB9bqPAlzpvJ4S9kwAAAA?w=142&h=208&c=7&r=0&o=5&pid=1.7"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Bank Gaib</h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2019</p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="https://archive.org/details/kisah-tanah-jawa-investigasi-mitos-dan-mistis/Kisah%20Tanah%20Jawa%20Bank%20Gaib/" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1580200699i/50701284.jpg"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Pocong gundul</h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2019</p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="https://archive.org/details/kisah-tanah-jawa-investigasi-mitos-dan-mistis/Kisah%20Tanah%20Jawa%20Pocong%20Gundul/" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="https://archive.org/services/img/kisahtanahjawakisahtanahjawa"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Mitos & Mistis</h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2018</p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="https://archive.org/details/kisah-tanah-jawa-investigasi-mitos-dan-mistis/Kisah%20Tanah%20Jawa%20Bank%20Gaib/" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uli">
+    <div class="card">
+        <div class="cardbackground">
+            <div class="cover">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbook">
+                <h3 ></h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2018</p>
+            </div>
+            <div class="div-button">
+                <button class="button1"><a href="" id="ahrev">Read</a></button>
+                <button class="button2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 ></h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2019</p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 ></h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2019</p>
+            </div>
+            <div class="buttonpart2">
+                <button class="buttonpart1"><a href="" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 ></h3>
+                <p >Penulis : dapoer tjerita</p>
+                <p >Tahun terbit : 2019</p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">Read</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">borrow</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+</Section>
+<h4><button>klik sini</button></h4>
+</div>
+</body>
